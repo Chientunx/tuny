@@ -288,6 +288,7 @@ body {
     font-weight: 500;
     border-radius: 0.2rem;
     padding: 0.5rem 1.5rem;
+    cursor: pointer;
 }
 .element-arrow {
     position: absolute;
