@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chientunx Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/png" href="./img-folder/icon-logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="space-box">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img-folder/icon-logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a href="./index.html" onclick="setActive(this)">Home</a>
+                <a href="./about.html" class="active" onclick="setActive(this)">About</a>
+                <a href="./projects.html" onclick="setActive(this)">Projects</a>
+            </div>
+            <div class="contact-button">
+                <button id="contact-btn" class="contact-btn">Contact</button>
+                <div id="contact-popup-overlay" class="contact-popup-overlay hidden">
+                    <div class="contact-popup-content">
+                        <button id="close-contact-popup" class="contact-close-btn">&times;</button>
+                        <h2>Contact Information</h2>
+                        <div class="info-popup">
+                            <div class="email">
+                                <img src="./img-folder/contact/mail-01.svg" name='envelope'>
+                                <p>chientunx.ddv@gmail.com</p>
+                            </div>
+                            <div class="phone">
+                                <img src="./img-folder/contact/call.svg" name='phone'>
+                                <p>+84.899.160.012</p>
+                            </div>  
+                            <div class="location">
+                                <img src="./img-folder/contact/google-maps.svg" name='location'>
+                                <p>Ha Noi, Viet Nam</p>
+                            </div>  
+                        </div>
+                        <div class="contact-popup-socials">
+                            <a href="https://www.instagram.com/tuny_uiux/" target="_blank">
+                                <img src="./img-folder/contact/insta-icon-dèault.svg" alt="Instagram">
+                            </a>
+                            <a href="https://www.behance.net/chientunx" target="_blank">
+                                <img src="./img-folder/contact/be-icon_dèault.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Done -->
+
+    <div class="section-1-main">
+        <div class="section-1">
+            <div class="s1-element-1">
+                <img src="./img-folder/about:star.png">
+            </div>
+            <div class="flip-container">
+                <div class="flip-box">
+                    <img src="./img-folder/about:flip1.png" alt="Front Image" class="front">
+                    <img src="./img-folder/about:flip2.png" alt="Back Image" class="back">
+                </div>
+            </div>
+            <div class="s1-element-2">
+                <img src="./img-folder/about:smile.png">
+            </div>
+        </div>
+    </div> <!-- Done -->
+
+    <div class="section-2-main">
+        <div class="section-2">
+            <button class="name">Hi, i am Chientunx ... Call me Tuny</button>
+            <p class="title">I am an UI/UX and Graphic Designer</p>
+            <div class="s2-element-1">
+                <img src="./img-folder/about:purpose.png">
+            </div>
+            <p class="content">As a network administrator but passionate about design, I have pursued my passion, dedicated and hard-working with knowledge, design skills, willing to learn, improve myself, each design is a testament to passion and enthusiasm, contributing my best to the success of the project as well as my advancement.</p>
+            <div class="s2-element-2">
+                <img src="./img-folder/arrow.png">
+            </div>
+            <div class="s2-element-3">
+                <img src="./img-folder/about:bulb.png">
+            </div>
+        </div>
+    </div> <!-- Done -->
+    
+    <div class="section-3-main">
+        <div class="section-3-experience">
+            <img src="./img-folder/about:experience.png">
+        </div>
+    </div> <!-- Done -->
+
+    <div class="section-4-main">
+        <div class="section-4-education">
+            <img src="./img-folder/about:education.png">
+        </div>
+    </div> <!-- Done -->
+
+    <div class="section-5-main">
+        <div class="section-5-skills">
+            <img src="./img-folder/about:skills.png">
+        </div>
+    </div> <!-- Done -->
+
+    <div class="section-6-main">
+        <div class="section-6-footer">
+            <div class="logo">
+                <img src="./img-folder/icon-logo.png">
+                <p>Chientunx</p>
+            </div>
+            <div class="mail">
+                <p>chientunx.ddv@gmail.com</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/tuny_uiux/">
+                    <p>Instagram</p>
+                </a>
+                <a href="https://www.behance.net/chientunx">
+                    <p>Behance</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
