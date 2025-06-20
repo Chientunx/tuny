@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chientunx Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" type="image/png" href="./img-folder/icon-logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="space-box">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img-folder/icon-logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a href="./index.html" onclick="setActive(this)">Home</a>
+                <a href="./about.html" onclick="setActive(this)">About</a>
+                <a href="./projects.html" class="active" onclick="setActive(this)">Projects</a>
+            </div>
+            <div class="contact-button">
+                <button id="contact-btn" class="contact-btn">Contact</button>
+                <div id="contact-popup-overlay" class="contact-popup-overlay hidden">
+                    <div class="contact-popup-content">
+                        <button id="close-contact-popup" class="contact-close-btn">&times;</button>
+                        <h2>Contact Information</h2>
+                        <div class="info-popup">
+                            <div class="email">
+                                <img src="./img-folder/contact/mail-01.svg" name='envelope'>
+                                <p>chientunx.ddv@gmail.com</p>
+                            </div>
+                            <div class="phone">
+                                <img src="./img-folder/contact/call.svg" name='phone'>
+                                <p>+84.899.160.012</p>
+                            </div>  
+                            <div class="location">
+                                <img src="./img-folder/contact/google-maps.svg" name='location'>
+                                <p>Ha Noi, Viet Nam</p>
+                            </div>  
+                        </div>
+                        <div class="contact-popup-socials">
+                            <a href="https://www.instagram.com/tuny_uiux/" target="_blank">
+                                <img src="./img-folder/contact/insta-icon-dèault.svg" alt="Instagram">
+                            </a>
+                            <a href="https://www.behance.net/chientunx" target="_blank">
+                                <img src="./img-folder/contact/be-icon_dèault.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="branding">Branding Design</button>
+        <button class="tab-btn" data-tab="digital">Digital Design</button>
+        <button class="tab-btn" data-tab="graphic">Graphic Design</button>
+        <button class="tab-btn" data-tab="like">You May Also Like</button>
+    </div>
+    
+    <!-- TAB 1 -->
+    <div class="tab-content active" id="branding">
+        <!-- TAB 1 -->
+        <!-- grid -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="./img-folder/pro-brand-1.png" alt="Image 1">
+                <button class="arrow-btn">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="./img-folder/pro-brand-2.png" alt="Image 2">
+                <button class="arrow-btn">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="./img-folder/pro-brand-3.png" alt="Image 3">
+                <button class="arrow-btn">
+                    <span>→</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="./img-folder/pro-brand-4.png" alt="Image 4">
+                <button class="arrow-btn">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+        <!-- image popup -->
+        <div class="image-popup-overlay" id="popup-1">
+            <div class="image-popup-content">
+                <img src="./img-folder/pro-brand-img1.png" alt="Popup Image">
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+        <div class="image-popup-overlay" id="popup-2">
+            <div class="image-popup-content">
+                <img src="./img-folder/pro-brand-img2.png" alt="Popup Image">
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+        <div class="image-popup-overlay" id="popup-3">
+            <div class="image-popup-content">
+                <img src="./img-folder/pro-brand-img4.png" alt="Popup Image">
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+        <div class="image-popup-overlay" id="popup-4">
+            <div class="image-popup-content">
+                <img src="./img-folder/pro-brand-img3.png" alt="Popup Image">
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>
+    </div> <!-- DONE -->
+    
+    <!-- TAB 2 -->
+    <div class="tab-content" id="digital">
+        <div class="digi-grid-container">
+            <!-- Repeat this block for all 23 images -->
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-01.png" alt="Digital Image 34">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_diratyrAy/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-02.png" alt="Digital Image 02">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DBfxiO_TjZN/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-03.png" alt="Digital Image 3">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_PWdvPyZmY/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-04.png" alt="Digital Image 4">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_N1Y8eytPN/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-05.png" alt="Digital Image 5">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_TKM1yy5re/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-06.png" alt="Digital Image 5">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DFDVB5dy2TI/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-07.png" alt="Digital Image 7">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_3Ary0ygU7/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-08.png" alt="Digital Image 8">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DAI7SpVS-pJ/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-09.png" alt="Digital Image 9">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DAlD3YgS6ea/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-10.png" alt="Digital Image 10">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DAGk4D6SD7D/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-11.png" alt="Digital Image 11">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DALpIkYSrmc/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-12.png" alt="Digital Image 12">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DAYT1g5SsRC/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-13.png" alt="Digital Image 13">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DFc_k2TtTRZ/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-14.png" alt="Digital Image 14">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DBOUVZLTKel/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-15.png" alt="Digital Image 15">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DBbP591zA7N/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-16.png" alt="Digital Image 16">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DFo_QInyE7M/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-17.png" alt="Digital Image 17">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DBDdmubTJxF/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-18.png" alt="Digital Image 18">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_sjD-DSEcy/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-19.png" alt="Digital Image 19">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DDzraFzSmMB/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-20.png" alt="Digital Image 20">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DHSOOpXzPT-/?img_index=1" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-21.png" alt="Digital Image 21">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DFNEMj0N_Ip/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-22.png" alt="Digital Image 22">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/DDYfNMQSnTA/" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <div class="digi-grid-item">
+                <img src="./img-folder/pro-digi/pro-digi-23.png" alt="Digital Image 23">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/p/C_VVQqSSzNV/?img_index=2" target="_blank" class="insta-btn">View on Instagram</a>
+                </div>
+            </div>
+            <!-- Add more grid items following the same structure -->
+        </div>
+    </div> <!-- DONE -->
+    
+    <!-- TAB 3 -->
+     <div class="tab-content" id="graphic">
+        <div class="graphic-design-container">
+            <div class="graphic-item">
+                <img src="./img-folder/pro-gra/pro-gra-1.png" alt="Graphic Design 1">
+                <button class="graphic-arrow-btn" data-popup="graphic-popup-1">→</button>
+            </div>
+            <div class="graphic-item">
+                <img src="./img-folder/pro-gra/pro-gra-2.png" alt="Graphic Design 2">
+                <button class="graphic-arrow-btn" data-popup="graphic-popup-2">→</button>
+            </div>
+            <div class="graphic-item">
+                <img src="./img-folder/pro-gra/pro-gra-3.png" alt="Graphic Design 3">
+                <button class="graphic-arrow-btn" data-popup="graphic-popup-3">→</button>
+            </div>
+        </div>
+        
+        <!-- Graphic Design Popups -->
+        <div class="graphic-popup-overlay" id="graphic-popup-1">
+            <div class="graphic-popup-content">
+                <img src="./img-folder/pro-gra/gra-img-popup-1.png" alt="Popup Image 1">
+                <button class="graphic-close-btn">&times;</button>
+            </div>
+        </div>
+        <div class="graphic-popup-overlay" id="graphic-popup-2">
+            <div class="graphic-popup-content">
+                <img src="./img-folder/pro-gra/gra-img-popup-2.png" alt="Popup Image 2">
+                <button class="graphic-close-btn">&times;</button>
+            </div>
+        </div>
+        <div class="graphic-popup-overlay" id="graphic-popup-3">
+            <div class="graphic-popup-content">
+                <img src="./img-folder/pro-gra/gra-img-popup-3.png" alt="Popup Image 3">
+                <button class="graphic-close-btn">&times;</button>
+            </div>
+        </div>
+     </div> <!-- DONE -->
+
+
+    <!-- TAB 4 -->
+     <div class="tab-content" id="like">
+        <div class="like-design-container">
+            <div class="like-item">
+                <div class="video-frame">
+                    <video src="./img-folder/2504-vid/lumnia.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+            <div class="like-item">
+                <div class="video-frame">
+                    <video src="./img-folder/2504-vid/wiki.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+            <div class="like-item">
+                <div class="video-frame">
+                    <video src="./img-folder/2504-vid/calculator.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--  -->
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chientunx Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img-folder/icon-logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="space-box">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img-folder/icon-logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a href="./index.html" class="active" onclick="setActive(this)">Home</a>
+                <a href="./about.html" onclick="setActive(this)">About</a>
+                <a href="./projects.html" onclick="setActive(this)">Projects</a>
+            </div>
+            <div class="contact-button">
+                <button id="contact-btn" class="contact-btn">Contact</button>
+                <div id="contact-popup-overlay" class="contact-popup-overlay hidden">
+                    <div class="contact-popup-content">
+                        <button id="close-contact-popup" class="contact-close-btn">&times;</button>
+                        <h2>Contact Information</h2>
+                        <div class="info-popup">
+                            <div class="email">
+                                <img src="./img-folder/contact/mail-01.svg" name='envelope'>
+                                <p>chientunx.ddv@gmail.com</p>
+                            </div>
+                            <div class="phone">
+                                <img src="./img-folder/contact/call.svg" name='phone'>
+                                <p>+84.899.160.012</p>
+                            </div>  
+                            <div class="location">
+                                <img src="./img-folder/contact/google-maps.svg" name='location'>
+                                <p>Ha Noi, Viet Nam</p>
+                            </div>  
+                        </div>
+                        <div class="contact-popup-socials">
+                            <a href="https://www.instagram.com/tuny_uiux/" target="_blank">
+                                <img src="./img-folder/contact/insta-icon-dèault.svg" alt="Instagram">
+                            </a>
+                            <a href="https://www.behance.net/chientunx" target="_blank">
+                                <img src="./img-folder/contact/be-icon_dèault.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <P>Let's Work Together!
+        <p>Building Your Visual Identity with
+        <div class="changing-text">
+            <span>Brand</span>
+            <span>Digital Products</span>
+            <span>Graphic Products</span>
+        </div>
+    </div>
+
+    <div class="element-1">
+        <div class="welcometo">
+            <a href="projects.html">
+                <button>Welcome to my portfolio</button>
+            </a>
+        </div>
+        <div class="element-arrow">
+            <img src="./img-folder/arrow.png" alt="">
+        </div>
+    </div>
+    <div class="element-target">
+        <img src="#" alt="">
+    </div>
+    <div class="element-bulb">
+        <img src="./img-folder/Bulb.png" alt="">
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

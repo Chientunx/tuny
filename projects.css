@@ -1,0 +1,566 @@
+:root {
+    --maincolor-bright: #FFD489;
+    --maincolor-dark: #262626;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./img-folder/about:bg-jpg.jpg') ;
+    background-size: cover;
+}
+
+/* HEAD - Navbar */
+.header {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin: 1.2rem 0rem;
+}
+.space-box {
+    width: 80%;
+    height: auto;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem 0rem;
+    border-top: 1px solid var(--maincolor-dark);
+    border-bottom: 1px solid var(--maincolor-dark);
+}
+.header .space-box .logo {
+    margin: 0;
+    padding: 0;
+}
+.header .space-box .logo img {
+    width: 2rem;
+    height: auto;
+}
+.header .space-box .nav-bar {
+    width: 30%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar a {
+    position: relative;
+    color: var(--maincolor-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.3; /* Default opacity for non-active links */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+.nav-bar a.active {
+    opacity: 1; /* Full visibility */
+    font-weight: 600;
+}
+/* Hover & Click Effects */
+.nav-bar a:hover,
+.nav-bar a.active {
+    opacity: 1; /* Full visibility */
+}
+.nav-bar a:hover::after,
+.nav-bar a.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--maincolor-dark);
+    transform: translateX(-50%);
+}
+/* Active Link */
+.nav-bar a.active {
+    color: var(--maincolor-dark);
+    opacity: 1;
+}
+/*  */
+/* Contact button */
+.header .space-box .contact-btn{
+    width: 6rem;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid var(--maincolor-dark);
+    background-color: transparent;
+    padding: 0.5rem 0rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    color: var(--maincolor-dark);
+    z-index: 1;
+}
+.header .space-box .contact-btn:hover{
+    background-color: var(--maincolor-bright);
+    font-size:1rem;
+    font-weight: 600;
+}
+.contact-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
+.contact-popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+.contact-popup-content {
+    background: white;
+    padding: 2rem 2rem 0rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30rem;
+    height: auto;
+    position: relative;
+    border: 1.5px solid #FFD489;
+    z-index: 1;
+}
+.contact-popup-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contact-popup-content .info-popup {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    border-top: 2px solid #FFD489;
+    border-bottom: 2px solid #FFD489;
+    opacity: 0.5;
+}
+.contact-popup-content .info-popup p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 2rem;
+
+}   
+.contact-popup-content .email{
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.contact-popup-content .phone{
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.contact-popup-content .location{
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.contact-popup-content .contact-popup-socials{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    background-color: transparent;
+}
+.contact-popup-content .contact-popup-socials img{
+    width: 2.2rem;
+    height: auto;
+    margin: 0rem 1rem;
+}
+.contact-popup-content .contact-popup-socials a {
+    text-decoration: none;
+}
+
+
+.contact-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+/* FOR TABS */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin: 2rem 0rem; 
+}
+.tab-btn {
+    padding: 0.4rem 2.4rem; 
+    border: none;
+    background: #9e9e9e;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.2rem;
+    opacity: 0.4;
+}
+.tab-btn.active {
+    background: var(--maincolor-bright);
+    color: var(--maincolor-dark);
+    font-weight: 600;
+    opacity: 1;
+}
+/*  */
+.tab-content {
+    display: none;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* TAB 1 - Branding Design */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    padding: 1.25rem;
+}
+/* Grid Items */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.625rem; /* 10px */
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover Effect */
+.grid-item:hover img {
+    transform: scale(1.05);
+    box-shadow: -0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.2); /* -10px 10px 20px */
+}
+/* Arrow Button */
+.arrow-btn {
+    position: absolute;
+    bottom: 0.625rem; /* 10px */
+    right: 0.625rem; /* 10px */
+    background: var(--maincolor-bright);
+    color: var(--maincolor-dark);
+    border: none;
+    width: 3rem; /* Ensure fixed size */
+    height: auto;
+    border-radius: 5%; /* Make it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+/* Arrow icon */
+.arrow-btn span {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+/* Show button on hover */
+.grid-item:hover .arrow-btn {
+    opacity: 1;
+}
+/* Move arrow from left to right */
+.grid-item:hover .arrow-btn span {
+    transform: translateX(0rem);
+}
+
+/* IMAGE POPUP */
+/* 🟢 POPUP OVERLAY */
+.image-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+/* Show popup when active */
+.image-popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 🟢 POPUP CONTENT */
+.image-popup-content {
+    position: relative;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.image-popup-content img {
+    width: 30rem;
+    height: auto;
+    border-radius: 10px;
+}
+/* 🟢 CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 0rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(178, 17, 17);
+    background: none;
+    border: none;
+}
+
+
+
+
+
+/* TAB 2 - Digitals Design */
+.digi-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    padding: 1.25rem;
+}
+.digi-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.digi-grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.digi-grid-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #FFD489;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+.digi-grid-item:hover .overlay {
+    height: 3rem;
+}
+.insta-btn {
+    color: #262626;
+    text-decoration: none;
+    font-size: 1rem;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+}
+.insta-btn:hover {
+    background: var(--maincolor-dark);
+    color: #FFD489;
+}
+
+
+
+
+
+
+/* TAB 3 - Graphic Design */
+/* Independent Graphic Design Section */
+.graphic-design-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.graphic-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.graphic-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.graphic-item:hover {
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.graphic-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+/* Arrow Button */
+.graphic-arrow-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.graphic-item:hover .graphic-arrow-btn {
+    opacity: 1;
+}
+
+/* Popup Styling */
+.graphic-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic-popup-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+}
+
+.graphic-popup-content img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+/* Close Button */
+.graphic-close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* TAB 4 - video */
+
+/* Like Tab - Container and Items */
+.like-design-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.like-item {
+    position: relative;
+    width: 300px;
+}
+
+.video-frame {
+    width: 300px; 
+    height: 300px;
+    background-color: #000;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 0 4px white, 0 0 0 6px #FFD489;
+    overflow: hidden;
+}
+.video-frame video {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+ 
