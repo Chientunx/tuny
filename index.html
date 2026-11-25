@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#edf2fc" />
+  <title>Tuny - Portfolio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="portfolio-shell">
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="eyebrow"> UIUX DESIGNER</div>
+      <div class="brand-lockup">
+        <span class="built">BUILT BY</span>
+        <img src="assets/Logo.svg" alt="Arrow">
+        <span class="brand-name">TUNY</span>
+      </div>
+    </header>
+
+    <!-- Search Toolbar -->
+    <nav class="project-toolbar" aria-label="Search and motion controls">
+      <div class="project-count">
+        Projects <span id="projectCount">10+</span>
+      </div>
+
+      <!-- View Switch: Slide vs Grid (Slide làm mặc định) -->
+      <div class="view-switch" role="group" aria-label="Project View Mode">
+        <button class="view-button active" data-view="cascade" id="viewSlideBtn" title="Slide View (Mặc định)" aria-label="Slide View">
+          <!-- Slide / Carousel Icon -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="4" width="10" height="16" rx="2" />
+            <path d="M3 7v10" />
+            <path d="M21 7v10" />
+          </svg>
+        </button>
+        <button class="view-button" data-view="grid" id="viewGridBtn" title="Grid View (Dạng lưới)" aria-label="Grid View">
+          <!-- 4-Grid Icon -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5" />
+            <rect x="14" y="3" width="7" height="7" rx="1.5" />
+            <rect x="3" y="14" width="7" height="7" rx="1.5" />
+            <rect x="14" y="14" width="7" height="7" rx="1.5" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="project-count">
+        Portfolio <span id="portfolioYear">2026</span>
+      </div>
+    </nav>
+
+    <!-- Main Hero & Diagonal Cascade Section -->
+    <section class="hero">
+      <!-- Left Hero Title -->
+      <div class="hero-copy">
+        <p class="kicker" id="heroKicker">UI/UX DESIGN · BRAND & GRAPHIC DESIGN</p>
+        <div class="title-lockup">
+          <img src="assets/Logo.svg" alt="Arrow">
+          <h1>TUNY</h1>
+        </div>
+        <p class="portfolio-word">portfolio</p>
+      </div>
+
+      <!-- Class 2: Container containing Center Showcase & Right Detail Panel (About Me) -->
+      <div class="class-2 hero-stage">
+        <!-- Center Showcase -->
+        <section class="showcase" id="projects" aria-label="Project showcase">
+          <div class="carousel-viewport" id="carouselViewport">
+            <div class="project-track" id="projectTrack">
+              <!-- Card 01: /uiux -->
+              <article class="project-card" data-index="0" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/01-fin-ai/thumb.png" alt="Arrow">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">FinAI</h3>
+                    <p class="project-subtitle">AI-Powered-Personal-Finance-App</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">01</span>
+                    <span class="project-tag">App</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 02: /uiux -->
+              <article class="project-card" data-index="1" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/02-fitbase/fitbase-2.png" alt="FitScan AI">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">FitScan AI</h3>
+                    <p class="project-subtitle">Calorie Counter</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">02</span>
+                    <span class="project-tag">App</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 03: /motion -->
+              <article class="project-card" data-index="2" data-tags="motion">
+                <div class="project-art">
+                  <video src="assets/projects/03-motion-collection/motion-10.mp4" autoplay loop muted playsinline></video>
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Motion Collection</h3>
+                    <p class="project-subtitle">|</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">03</span>
+                    <span class="project-tag">Motion</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 04: /VYBE -->
+              <article class="project-card" data-index="3" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/04-vybe/thumb.png" alt="VYBE">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">VYBE</h3>
+                    <p class="project-subtitle">Own Your Vibe</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">04</span>
+                    <span class="project-tag">E-Commerce</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 05: /FIBA -->
+              <article class="project-card" data-index="4" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/05-fiba/TV - 1.png" alt="FIBA">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">FIBA</h3>
+                    <p class="project-subtitle">Find Your Balance</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">05</span>
+                    <span class="project-tag">App</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 06: /WIKI AGENT -->
+              <article class="project-card" data-index="5" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/06-wiki/01.png" alt="WIKI AGENT">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">WIKI AGENT</h3>
+                    <p class="project-subtitle">Token AI Analysis</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">06</span>
+                    <span class="project-tag">Web 3 - Blockchain</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 07: /Lumnia -->
+              <article class="project-card" data-index="6" data-tags="uiux">
+                <div class="project-art">
+                  <img src="assets/projects/07-lumnia/Section 1.png" alt="LUMNIA">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">LUMNIA</h3>
+                    <p class="project-subtitle">Seamless DeFi on Somnia.</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">07</span>
+                    <span class="project-tag">Web 3 - Blockchain</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 08: /SMARTO2 -->
+              <article class="project-card" data-index="7" data-tags="app">
+                <div class="project-art">
+                  <img src="assets/projects/08-smarto2/thumb.png" alt="SMARTO2">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">SMARTO2</h3>
+                    <p class="project-subtitle">Smart Connect - Smart Control</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">08</span>
+                    <span class="project-tag">App</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 09: /JWAKE -->
+              <article class="project-card" data-index="8" data-tags="brand">
+                <div class="project-art">
+                  <img src="assets/projects/09-jwake/jwake-overview.png" alt="JWAKE">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">JWAKE</h3>
+                    <p class="project-subtitle">Fitness & Cardio</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">09</span>
+                    <span class="project-tag">Branding</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 10: /Aurena -->
+              <article class="project-card" data-index="9" data-tags="brand">
+                <div class="project-art">
+                  <img src="assets/projects/10-aurena/aurena-overview.png" alt="Aurena">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Aurena</h3>
+                    <p class="project-subtitle">Cosmetics</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">10</span>
+                    <span class="project-tag">Branding</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 11: /Frefru -->
+              <article class="project-card" data-index="10" data-tags="brand">
+                <div class="project-art">
+                  <img src="assets/projects/11-frefru/frefru-overview.png" alt="Frefru">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Frefru</h3>
+                    <p class="project-subtitle">Fresh Fruit</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">11</span>
+                    <span class="project-tag">Branding</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 12: /Nettea -->
+              <article class="project-card" data-index="11" data-tags="brand">
+                <div class="project-art">
+                  <img src="assets/projects/12-nattea/nattea-overview.png" alt="Nattea">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Nattea</h3>
+                    <p class="project-subtitle">Nature Tea</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">12</span>
+                    <span class="project-tag">Branding</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 13: /locacaf -->
+              <article class="project-card" data-index="12" data-tags="brand">
+                <div class="project-art">
+                  <img src="assets/projects/13-locacaf/locaCaf-overview.png" alt="Locacaf">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Locacaf</h3>
+                    <p class="project-subtitle">Location Cafe</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">13</span>
+                    <span class="project-tag">Branding</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 14: /Graphic Design -->
+              <article class="project-card" data-index="13" data-tags="graphic">
+                <div class="project-art">
+                  <img src="assets/projects/14-social-media/freelance-1.png" alt="Social Media Design">
+                </div>
+                <div class="project-details">
+                  <div class="project-text">
+                    <h3 class="project-title">Social Media Design</h3>
+                    <p class="project-subtitle">|</p>
+                  </div>
+                  <div class="project-side">
+                    <span class="project-num">14</span>
+                    <span class="project-tag">Graphic</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Detail Panel (About Me with Avatar — permanently floating over showcase inside Class 2) -->
+        <aside class="about-card" id="detailCard">
+          <div class="about-top">
+            <span class="about-tag">ABOUT ME</span>
+            <span>16</span>
+          </div>
+
+          <div class="about-profile">
+            <!-- 1. Avatar (to nhất) -->
+            <div class="about-avatar-wrap">
+              <div class="about-avatar">
+                <img src="assets/avatar.png" alt="avatar">
+              </div>
+              <span class="avatar-badge" title="Available for work"></span>
+            </div>
+
+            <!-- 2. Tên, 3. Subtext, 4. Paragraph -->
+            <div class="about-name-block">
+              <h2>Đào Văn Chiến</h2>
+              <p class="role">UI/UX Designer & Product Designer</p>
+              <p class="about-bio">Tuny là UI/UX Designer đa lĩnh vực, với kinh nghiệm thiết kế sản phẩm số trong nhiều domain như SaaS, Fintech, E-commerce và AI Products. Tối ưu sản phẩm, trải nghiệm người dùng và thẩm mỹ thị giác để tạo ra những giải pháp thiết kế hiệu quả, linh hoạt và giàu tính ứng dụng.</p>
+            </div>
+          </div>
+
+          <div class="about-divider"></div>
+
+          <ul class="skill-list">
+            <li>
+              <span class="skill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              <span>2,5 – 3 years experience</span>
+            </li>
+            <li>
+              <span class="skill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </span>
+              <span>UI/UX · Design System · Product</span>
+            </li>
+            <li>
+              <span class="skill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <span>Brand & Graphic design</span>
+            </li>
+          </ul>
+
+          <div class="about-bottom">
+            <div class="about-brand">
+              <img src="assets/Logo.svg" alt="Arrow">
+              <strong>TUNY</strong>
+            </div>
+            <!-- <a href="mailto:hello@tuny.design" class="view-work">Contact ↗</a> -->
+          </div>
+        </aside>
+      </div> <!-- End Class 2 (.hero-stage) -->
+    </section>
+
+    <!-- Bottom Footer Filter Navigation -->
+    <div class="footer-wrapper">
+      <footer class="footer-nav" aria-label="Filter motion skills">
+        <div class="filter-group">
+          <button class="filter-button active" data-filter="all">Everything</button>
+          <button class="filter-button" data-filter="uiux">UIUX</button>
+          <button class="filter-button" data-filter="brand">Brand</button>
+          <button class="filter-button" data-filter="motion">Motion</button>
+          <button class="filter-button" data-filter="graphic">Graphic</button>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/tuny_uiux/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram ↗</a>
+          <a href="https://www.behance.net/chientunx" target="_blank" rel="noopener noreferrer" class="social-link">Behance ↗</a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       PROJECT DETAIL POPUP MODAL (POPUP CHI TIẾT DỰ ÁN)
+       - Nằm độc lập, không ảnh hưởng đến cấu trúc trang chính
+       - Cố định trong màn hình (Fixed viewport overlay), chỉ scroll bên trong modal
+       - Đầy đủ nút Close, Next Project và Previous Project
+       ========================================================================== -->
+  <div class="project-modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="project-modal-window">
+      <!-- Top Sticky Navigation Bar -->
+      <header class="project-modal-header">
+        <div class="modal-header-left">
+          <span class="modal-kicker" id="modalKicker">PROJECT / 01 — SELECTED WORK</span>
+        </div>
+        <div class="modal-header-actions">
+          <button class="modal-nav-btn" id="modalPrevBtn" title="Previous Project (Phím ←)" aria-label="Previous Project">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="modal-nav-btn" id="modalNextBtn" title="Next Project (Phím →)" aria-label="Next Project">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <button class="modal-close-btn" id="modalCloseBtn" title="Close (Phím Esc)" aria-label="Close modal">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Scrollable Inner Body -->
+      <div class="project-modal-body" id="modalBody">
+        <!-- Hero Header -->
+        <section class="modal-hero">
+          <h2 class="modal-title" id="modalTitle">Fitbase Nutrition</h2>
+          <p class="modal-subtitle" id="modalSubtitle">AI-powered nutrition & fitness application</p>
+          
+          <div class="modal-tags" id="modalTags">
+            <span class="modal-tag-pill">UI/UX Design</span>
+            <span class="modal-tag-pill">Mobile App</span>
+            <span class="modal-tag-pill">AI Product</span>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-col">
+              <span class="modal-meta-label">MY ROLE</span>
+              <span class="modal-meta-value" id="modalRole">UI/UX Designer</span>
+            </div>
+            <div class="modal-meta-col">
+              <span class="modal-meta-label">YEAR</span>
+              <span class="modal-meta-value" id="modalYear">2025</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="modal-divider"></div>
+
+        <!-- Showcase Section -->
+        <section class="modal-showcase-section">
+          <div class="modal-showcase-heading">
+            <h3 class="modal-section-title">Product Showcase</h3>
+            <p class="modal-section-desc">Explore the product experience and interface design.</p>
+          </div>
+
+          <!-- Showcase Cards Container -->
+          <div class="modal-cards-container" id="modalShowcaseContent">
+            <!-- Dynamic showcase cards will be rendered here -->
+          </div>
+        </section>
+
+        <!-- Bottom Navigation Footer inside Scroll Area -->
+        <footer class="modal-footer-nav">
+          <button class="modal-footer-btn" id="modalFooterPrevBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            <span id="modalFooterPrevLabel">Previous Project</span>
+          </button>
+          <button class="modal-footer-btn" id="modalFooterNextBtn">
+            <span id="modalFooterNextLabel">Next Project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== END PROJECT DETAIL POPUP MODAL ==================== -->
+
+  <script src="script.js"></script>
+</body>
+</html>
