@@ -887,7 +887,7 @@ function renderModalProject(index) {
             <div class="modal-video-grid">
               ${project.videoGrid.map(v => `
                 <div class="modal-video-item">
-                  <video src="${v}" autoplay loop muted playsinline></video>
+                  <video src="${v}" autoplay loop muted playsinline preload="metadata"></video>
                 </div>
               `).join("")}
             </div>
@@ -911,8 +911,8 @@ function renderModalProject(index) {
                 return `
                   <div class="modal-gallery-item">
                     ${isVideo 
-                      ? `<video src="${imgUrl}" autoplay loop muted playsinline></video>`
-                      : `<img src="${imgUrl}" alt="${project.title} - ${idx + 1}" loading="lazy">`
+                      ? `<video src="${imgUrl}" autoplay loop muted playsinline preload="metadata"></video>`
+                      : `<img src="${imgUrl}" alt="${project.title} - ${idx + 1}" loading="lazy" decoding="async">`
                     }
                   </div>
                 `;
@@ -943,8 +943,8 @@ function renderModalProject(index) {
           const badgeUrl = typeof item === "object" && item.badgeUrl ? item.badgeUrl : "#";
           const isVideo = imgUrl.endsWith('.mp4') || imgUrl.endsWith('.webm');
           const mediaHtml = isVideo
-            ? `<video src="${imgUrl}" autoplay loop muted playsinline controls style="max-width: 100%; height: auto; border-radius: 18px; display: block; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);"></video>`
-            : `<img src="${imgUrl}" alt="${project.title}" loading="lazy">`;
+            ? `<video src="${imgUrl}" autoplay loop muted playsinline controls preload="metadata" style="max-width: 100%; height: auto; border-radius: 18px; display: block; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);"></video>`
+            : `<img src="${imgUrl}" alt="${project.title}" loading="lazy" decoding="async">`;
 
           return `
             <div class="showcase-block">

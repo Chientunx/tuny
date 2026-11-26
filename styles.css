@@ -333,13 +333,16 @@ img[src*="Logo.svg"] {
 .hero.is-grid-view .carousel-viewport::-webkit-scrollbar {
   width: 6px;
 }
+
 .hero.is-grid-view .carousel-viewport::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .hero.is-grid-view .carousel-viewport::-webkit-scrollbar-thumb {
   background: rgba(30, 25, 23, 0.16);
   border-radius: 999px;
 }
+
 .hero.is-grid-view .carousel-viewport::-webkit-scrollbar-thumb:hover {
   background: rgba(30, 25, 23, 0.32);
 }
@@ -1142,10 +1145,12 @@ h1 {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(285px, 20.5vw, 335px);
+  width: clamp(360px, 26vw, 430px);
+  max-height: calc(100% - 16px);
+  box-sizing: border-box;
   z-index: 50;
   /* Overlays on top of center showcase inside class 2 */
-  padding: 20px 20px 18px;
+  padding: 20px 24px 18px;
   border: 1px solid rgba(255, 255, 255, 0.95);
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.92);
@@ -1162,12 +1167,12 @@ h1 {
   justify-content: space-between;
   align-items: center;
   color: #8c817b;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .about-tag {
   color: var(--orange);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
 }
 
@@ -1177,14 +1182,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
-  margin: 14px 0 10px;
+  gap: 12px;
+  margin: 12px 0 8px;
 }
 
 .about-avatar-wrap {
   position: relative;
-  width: 110px;
-  height: 110px;
+  width: 104px;
+  height: 104px;
   flex-shrink: 0;
 }
 
@@ -1238,49 +1243,49 @@ h1 {
 
 .about-name-block h2 {
   margin: 0;
-  font: 700 24px/1.15 var(--font-main);
+  font: 700 27px/1.2 var(--font-main);
   color: #1e1917;
   letter-spacing: -0.02em;
 }
 
 .about-name-block .role {
   margin: 0;
-  font: 500 13px/1.4 var(--font-main);
+  font: 500 14.5px/1.4 var(--font-main);
   color: #6d625d;
 }
 
 .about-bio {
   margin: 4px 0 0;
-  font: 400 12.5px/1.55 var(--font-main);
+  font: 400 13.8px/1.55 var(--font-main);
   color: #766d68;
 }
 
 .about-divider {
   height: 1px;
   background: var(--line);
-  margin: 10px 0 14px;
+  margin: 10px 0 12px;
 }
 
 .skill-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   display: grid;
-  gap: 11px;
+  gap: 10px;
 }
 
 .skill-list li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
   color: #443e3a;
-  font-size: 11.5px;
+  font-size: 13px;
   line-height: 1.35;
 }
 
 .skill-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1293,20 +1298,20 @@ h1 {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--line);
-  padding-top: 13px;
+  padding-top: 12px;
 }
 
 .about-brand {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 13px;
+  font-size: 14.5px;
   color: #1e1917;
   font-weight: 700;
 }
 
 .about-brand img {
-  height: 18px;
+  height: 20px;
   width: auto;
   aspect-ratio: 154 / 103;
   object-fit: contain;
@@ -1450,7 +1455,7 @@ h1 {
   }
 
   .about-card {
-    width: clamp(265px, 19vw, 305px);
+    width: clamp(330px, 24vw, 385px);
   }
 }
 
@@ -1485,27 +1490,27 @@ h1 {
   }
 
   .about-card {
-    width: clamp(245px, 20vw, 275px);
-    padding: 16px 16px 14px;
+    width: clamp(300px, 24vw, 350px);
+    padding: 16px 20px 14px;
   }
 
   .about-avatar-wrap,
   .about-avatar {
-    width: 66px;
-    height: 66px;
+    width: 72px;
+    height: 72px;
   }
 
   .about-name-block h2 {
-    font-size: 21px;
+    font-size: 23px;
   }
 
   .about-name-block .role {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .about-bio {
-    font-size: 11.5px;
-    line-height: 1.45;
+    font-size: 12.5px;
+    line-height: 1.5;
   }
 
   .skill-list {
@@ -1514,7 +1519,7 @@ h1 {
   }
 
   .skill-list li {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1566,14 +1571,14 @@ h1 {
   }
 
   .about-card {
-    width: 230px;
-    padding: 14px 14px 12px;
+    width: 275px;
+    padding: 14px 16px 12px;
   }
 
   .about-avatar-wrap,
   .about-avatar {
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
   }
 
   .about-profile {
@@ -1582,16 +1587,16 @@ h1 {
   }
 
   .about-name-block h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .about-name-block .role {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .about-bio {
-    font-size: 11px;
-    line-height: 1.4;
+    font-size: 11.5px;
+    line-height: 1.45;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -1608,7 +1613,7 @@ h1 {
   }
 
   .skill-list li {
-    font-size: 10.5px;
+    font-size: 11.5px;
   }
 
   .about-bottom {
@@ -2008,7 +2013,8 @@ h1 {
   }
 
   .about-card {
-    padding: 14px 16px;
+    width: clamp(330px, 23vw, 380px);
+    padding: 14px 18px;
   }
 
   .about-avatar-wrap,
@@ -2023,11 +2029,11 @@ h1 {
   }
 
   .about-name-block h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .about-bio {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.4;
   }
 
@@ -2037,7 +2043,7 @@ h1 {
   }
 
   .skill-list li {
-    font-size: 11px;
+    font-size: 11.5px;
   }
 
   .about-bottom {
