@@ -1,0 +1,73 @@
+<svg width="154" height="103" viewBox="0 0 154 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_n_4306_9466)">
+<path d="M154.002 51.3729C154.002 57.381 152.972 63.1412 151.071 68.4972C148.188 76.6714 143.296 83.8919 136.982 89.5713C127.909 97.7401 115.906 102.719 102.738 102.746V0C115.906 0.026942 127.909 5.00582 136.982 13.18C143.296 18.8594 148.188 26.0798 151.071 34.2486C152.972 39.6047 154.002 45.3703 154.002 51.3729Z" fill="url(#paint0_linear_4306_9466)"/>
+</g>
+<g filter="url(#filter1_n_4306_9466)">
+<path d="M68.4898 34.25V102.747H34.2461V68.3962L68.3875 34.25H68.4898Z" fill="url(#paint1_linear_4306_9466)"/>
+</g>
+<g filter="url(#filter2_n_4306_9466)">
+<path d="M102.634 0L68.3905 34.2486H0L34.2491 0H102.634Z" fill="url(#paint2_linear_4306_9466)"/>
+</g>
+<defs>
+<filter id="filter0_n_4306_9466" x="102.738" y="0" width="51.2617" height="102.746" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.1212667226791382 1.1212667226791382" stitchTiles="stitch" numOctaves="3" result="noise" seed="2116" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_4306_9466">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<filter id="filter1_n_4306_9466" x="34.2461" y="34.25" width="34.2422" height="68.498" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.1212667226791382 1.1212667226791382" stitchTiles="stitch" numOctaves="3" result="noise" seed="2116" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_4306_9466">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<filter id="filter2_n_4306_9466" x="0" y="0" width="102.633" height="34.248" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.1212667226791382 1.1212667226791382" stitchTiles="stitch" numOctaves="3" result="noise" seed="2116" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_4306_9466">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<linearGradient id="paint0_linear_4306_9466" x1="146.566" y1="51.8609" x2="112.507" y2="51.8609" gradientUnits="userSpaceOnUse">
+<stop stop-color="#87A5F7"/>
+<stop offset="1" stop-color="#3F72FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_4306_9466" x1="63.5229" y1="68.8239" x2="40.7716" y2="68.8239" gradientUnits="userSpaceOnUse">
+<stop stop-color="#87A5F7"/>
+<stop offset="1" stop-color="#3F72FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_4306_9466" x1="87.7474" y1="17.287" x2="19.5581" y2="17.287" gradientUnits="userSpaceOnUse">
+<stop stop-color="#87A5F7"/>
+<stop offset="1" stop-color="#3F72FF"/>
+</linearGradient>
+</defs>
+</svg>
